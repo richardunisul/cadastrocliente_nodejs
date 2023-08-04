@@ -1,6 +1,6 @@
 const express = require('express');
 const { getLista, getCliente, inserir,
-  alterar, excluir  } = require("./clienterecurso");
+  alterar, excluir  } = require("./recursocliente");
 const router = express.Router(); // Inicializa o roteador dos serviços
 router.get('/', (req, res)=>{  // Rota default
   res.json({ "statusCode": 200, "msg": "API CRUD Cliente Rodando"
